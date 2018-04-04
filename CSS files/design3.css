@@ -1,0 +1,329 @@
+/*
+* {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+*/
+
+/* ---- INDEX.PHP KEZTDETE ---- */
+body {
+    background-color: white;
+}
+
+/* -- Fejléc -- */
+.fejlec{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	background-color: white;
+	height: 180px;
+	width: 100%;
+	z-index: 1;
+}
+
+#notnow {
+	visibility: hidden;
+}
+
+.fejlec .logo {
+	padding: 5px 0px 0px 30px;
+	width: 150px;	
+	height: 150px;
+} 
+
+.navigation{
+	position: relative;
+	top: -212px;
+	left: 200px;
+}
+
+.navigation li {
+	font-family: 'Bungee Inline', cursive;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.8vw;
+	margin: 5px;
+	padding: 0px 10px;
+}
+
+
+
+.wolf_nav {
+	position: relative;
+	top: -155px;
+	left: 165px;
+}
+
+.wolf_nav li{	
+	display: inline-block;
+	font-size: 3.6vw;
+	font-family: 'Bungee Inline', cursive;
+	padding: 0px;
+	text-transform: uppercase;
+	color: rgb(100,23,17);
+	text-decoration: none;
+}
+
+.wolf_nav:hover{
+	text-decoration: none;
+}
+
+.fejlec .navigation #onpage {
+	color: rgb(100,23,17);
+}
+
+.fejlec .navigation #onpage:hover{
+	color: rgb(180,23,17);
+	text-decoration: underline;
+}
+
+.navigation a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+
+/* -- Belső rész -- */
+.belso {
+	position: relative;
+	top: 157px;
+	height: 550px;
+	background: url("cover.gif") no-repeat bottom center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.belso .cover_logo {
+	height: 400px;
+	width: 400px;
+	margin: 5% 35%;
+}
+
+
+/* -- Belső2 -- */
+.belso2 {
+	position: relative;
+	left: -10px;
+	top: 170px;
+	height: 700px;
+	width: 101%;
+	background: url("backg.jpg") no-repeat bottom center;
+	background-size: cover;
+	background-attachment: scroll;
+	color: white;
+}
+
+.felirat{
+	position: relative;
+	top: 40%;
+	left: 25%;
+	width: 750px;
+	line-height: 2em;
+	font-size: 25px;
+	background-color: rgba(0,0,0,.65);
+	font-family: 'Bungee Inline', cursive;
+	padding: 25px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/* -- Lábléc -- */
+.lablec {
+	position: relative;
+	left: -10px;
+	top: 155px;
+	height: 100px;
+	width: 101%;
+	font-size: 25px;
+	font-family: 'Bungee Inline', cursive;
+	line-height: 2em;
+	color: white;
+	background-color: rgba(0,0,0, .5);
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: gray;
+}
+
+a:visited{
+	text-decoration: none;
+	color: gray;
+}
+/* ---- INDEX.PHP EDDIG TART ---- */
+
+
+/* ---- HAMBI.PHP INNNEN KEZDŐDIK ---- */
+/* -- Insert_element -- */
+.insert_element{
+	position: relative;
+	top: 180px;
+	margin-left: 30px;
+}
+
+.insert_table #pic{
+	min-height: 2vw;
+	min-width: 2vw;
+	max-height: 9.75vw;
+	max-width: 9.75vw;
+	
+}
+
+.insert_table .bin_icon, .pen_icon {
+	width: 50px;
+	height: 50px;
+}
+
+.insert_table .bin_icon:hover, .pen_icon:hover {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.insert_table_b {
+	margin-left: 100px;
+}
+
+.insert_table_b .bin_icon, .pen_icon {
+	width: 50px;
+	height: 50px;
+}
+
+.insert_table_b .bin_icon:hover, .pen_icon:hover {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+	min-width: 60px;
+}
+
+.insert_table tr:nth-child(even){
+    background-color: rgba(0,0,0, .15);
+	text-align: center;
+}
+
+.insert_table_b tr:nth-child(even){
+    background-color: rgba(0,0,0, .15);
+	text-align: center;
+}
+
+th {
+    background-color: rgba(0,0,0, .5);
+    color: white;
+	text-align: center;
+	width: 60px;
+}
+
+td .osszetevok_row{
+	width: 500px;	
+}
+
+.insert_table_b td {
+	min-width: 60px;
+	height: 60px;
+}
+
+.new_item {
+	font-size: 25px;
+	font-family: 'Bungee Inline', cursive;
+	text-decoration: underline;
+}
+
+.new_item:hover {
+	color: orange;
+}
+
+.new_item2 {
+	color: orange;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 30px;
+	margin-left: 15px;
+	text-decoration: underline;
+}
+
+.shop {
+	font-weight: bold;
+}
+/* ---- HAMBI.PHP VÉGE ---- */
+
+
+
+/* ---- INSERT.PHP START ---- */
+.new_burger  {
+	position: relative;
+	top: 150px;
+}
+
+.reset_btn, .submit_btn {
+	position: relative;
+	top:-4.5vw;
+	background-color: white;
+	color: black;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 20px;
+	border: 1px solid black;
+	border-radius: 15px;
+	margin: 100px 10px;
+	padding: 2px 10px;
+}
+
+.reset_btn:hover, .submit_btn:hover {
+	background-color: gray;
+	color:white;
+	/*border-color: gray;*/
+}
+
+.form{
+	margin: -40px 70px 20px;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 20px;
+}
+
+.form1{
+	margin: 0px 40px 20px;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 20px;
+}
+
+#kep1 {
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+#alle_12, #alle_22, #alle_32, #f_nev1, #ara1, #osszetevok1, #h_nev1, #uzletnev1, #datum1, #ertek1, #ir1, #var1, #ker1, #cim1{
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+/* ---- INSERT.PHP VÉGE ---- */
+
+/* ---- INSERT_B.PHP START ---- */
+.err1 {
+	position: relative;
+	top:-35px;
+	left: 30px;
+	font-size: 1.4vw;
+}
+
+.err2 {
+	position: relative;
+	top:-40px;
+	left: 30px;
+	font-size: 1vw;
+	color: blue;
+}
+
+span {
+	color: red;
+	font-family: Sans-serif, cursive;
+	font-size: 1.5vw;
+}
+
+
+/* ---- INSERT_B.PHP Vége ---- */
